@@ -8,17 +8,63 @@
     <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!--Feuille de style local perso-->
     <link href="Style.css" rel="stylesheet" type="text/css" />
+    <!--Activation du fichier javacript en local-->
+    <script src="bootstrap.bundle.min.js"></script>
     <title>ECF SERRES CASTET</title>
+    <link rel="icon" type="image/svg" href="IMAGES\Logoecfsvg.svg"/>
 </head>
 <body>
-    <div class="accordion">
+    <!--Reprise et adaptation de la navbar du cours-->
+    <!-- Déclaration du composant -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <!-- Titre de la page -->
+          <a class="navbar-brand" href="\ECFindex.html"><img id="demo" class="img-fluid" src="Logo ECF pro.png" alt="ECF-PRO Serres Castet"></a>
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarScroll" 
+          aria-controls="navbarScroll" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
+                <path d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793L7.646.146zM1 7v3h14V7H1zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2h14zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarScroll">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Elements du menu -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Les prochaines formations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nous contacter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Actualité</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Rechercher sur le site" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Recherche</button>
+            </form>
+          </div>
+        </div>
+     </nav>
+     <!--Le but est d'utiliser une présentation en accordéon de sorte que sur un smartphone le visiteur 
+      puisse trouver les éléments rapidement en cliquant directement sur les titres-->
+        <div class="accordion">
         <input type="radio" name="select" class="accordion-select" checked />
-       <div class="accordion-title"><span>Title</span>
-        <button type="button" class="btn btn-danger"> Nos prochaines formations !</button>
-    </div>
-       <div class="accordion-content">Content</div> 
+       <div class="accordion-title"><span>Nos Véhicules école</span></div>
+       <div class="accordion-content">
+           <img class="img-fluid img-thumbnail rounded" class="container-sm" src="IMAGES\flotteecole.jpg" class="w-25 p-3" alt="Notre Flotte"/>
+           <p>En venant chez<strong> ECF à Serres-castet</strong>, vous disposerez d'une flotte de véhicule école pour tous vos permis : En effet, nous pouvons vous former à la conduite de véhicule de la catégorie C1, C, D et CE</p>
+        
+    
+        </div> 
             <input type="radio" name="select" class="accordion-select" />
-       <div class="accordion-title"><span>Title</span></div>
+       <div class="accordion-title"><span>Une équipe pour vous acceuillir</span></div>
        <div class="accordion-content">Content</div> 
             <input type="radio" name="select" class="accordion-select" />
        <div class="accordion-title"><span>Title</span></div>

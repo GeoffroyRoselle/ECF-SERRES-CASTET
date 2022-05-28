@@ -95,9 +95,18 @@
 .accordion-content {
     background-color: #568eea;
     color: #ffffff;
-    height: 280px;
-    margin-bottom: -280px;
+    height: 600px;
+    margin-bottom: -600px ;
     margin-right: 0;
     padding: 33px;
     width: 100%;
 } 
+/* Box shadows pour le logo de la page*/
+#demo {
+    background-color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: 5px solid #1C6EA4;
+    border-radius: 40px 0px 40px 40px;
+    height: 3rem;
+    }
