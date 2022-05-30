@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Introduction responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Installation de bootstrap en local-->
     <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -13,13 +14,13 @@
     <title>ECF SERRES CASTET</title>
     <link rel="icon" type="image/svg" href="IMAGES\Logoecfsvg.svg"/>
 </head>
-<body>
+  <body>
     <!--Reprise et adaptation de la navbar du cours-->
     <!-- Déclaration du composant -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <!-- Titre de la page -->
-          <a class="navbar-brand" href="\ECFindex.html"><img id="demo" class="img-fluid" src="Logo ECF pro.png" alt="ECF-PRO Serres Castet"></a>
+          <a class="navbar-brand" href="E:\STUDI\Projet ECF\ECF-SERRES-CASTET\ECFindex.HTML"><img id="demo" class="img-fluid" src="Logo ECF pro.png" alt="ECF-PRO Serres Castet"></a>
           <button 
           class="navbar-toggler" 
           type="button" 
@@ -36,10 +37,10 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <!-- Elements du menu -->
               <li class="nav-item">
-                <a class="nav-link" href="#">Les prochaines formations</a>
+                <a class="nav-link" href="formation.html">Les prochaines formations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nous contacter</a>
+                <a class="nav-link" href="mailto:cedric.cadet-petit@ecf-formapro.com?subject=Intérêt offre de formation"">Nous contacter</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Actualité</a>
@@ -54,40 +55,64 @@
      </nav>
      <!--Le but est d'utiliser une présentation en accordéon de sorte que sur un smartphone le visiteur 
       puisse trouver les éléments rapidement en cliquant directement sur les titres-->
-        <div class="accordion">
-        <input type="radio" name="select" class="accordion-select" checked />
+    <div class="accordion">
+      <input type="radio" name="select" class="accordion-select" checked />
        <div class="accordion-title"><span>Nos Véhicules école</span></div>
-       <div class="accordion-content">
+          <div class="accordion-content">
            <img class="img-fluid img-thumbnail rounded" class="container-sm" src="IMAGES\flotteecole720p.jpg" class="w-25 p-3" alt="Notre Flotte"/>
            <p>En venant chez<strong> ECF à Serres-castet</strong>, vous disposerez d'une flotte de véhicule école pour tous vos permis : En effet, nous pouvons vous former à la conduite de véhicule de la catégorie C1, C, D et CE</p>
         
     
-        </div> 
-            <input type="radio" name="select" class="accordion-select" />
-       <div class="accordion-title"><span>Une équipe pour vous acceuillir</span></div>
-       <div class="accordion-content">
-        <img class="img-fluid img-thumbnail rounded" class="container-sm" src="IMAGES\photogroupe720p.jpg" class="w-25 p-3" alt="Notre Flotte"/>
-        <p>Une équipe de professionnels qui savent aussi ne pas se prendre au sérieux, pour vous orienter et vous former dans la joie et la bonne humeur .</p>
-        <!--Ajout d'une liste du personnel de l'agence-->
-        <H5>L'équipe de Serres-castet de gauche à droite</H5>
-        <ul>
-          <li>Christophe , Formateur en Logistique</li>
-          <li>Geoffroy , Formateur en Transport</li>
-          <li>Yannick , Formateur et moniteur groupe lourd</li>
-          <li>Frédéric , Formateur et moniteur groupe lourd</li>
-          <li>Aline , Agent Administratif</li>
-          <li>Jennifer , Agent Administratif</li>
-          <li> Nicolas , Gérant des agences ECF Aquitaine</li>
-          <li>Cédric, Agent commercial</li>
-        </ul>
+          </div> 
+      <input type="radio" name="select" class="accordion-select" />
+        <div class="accordion-title"><span>Une équipe pour vous acceuillir</span></div>
+          <div class="accordion-content">
+          <img class="img-fluid img-thumbnail rounded" class="container-sm" src="IMAGES\photogroupe720p.jpg" class="w-25 p-3" alt="Notre Flotte"/>
+          <p>Une équipe de professionnels qui savent aussi ne pas se prendre au sérieux, pour vous orienter et vous former dans la joie et la bonne humeur .</p>
+          <!--Ajout d'une liste du personnel de l'agence-->
+          <H5>L'équipe de Serres-castet de gauche à droite</H5>
+            <ul>
+              <li>Christophe , Formateur en Logistique</li>
+              <li>Geoffroy , Formateur en Transport</li>
+              <li>Yannick , Formateur et moniteur groupe lourd</li>
+              <li>Frédéric , Formateur et moniteur groupe lourd</li>
+              <li>Aline , Agent Administratif</li>
+              <li>Jennifer , Agent Administratif</li>
+              <li> Nicolas , Gérant des agences ECF Aquitaine</li>
+              <li>Cédric, Agent commercial</li>
+            </ul>
 
 
-       </div> 
+          </div> 
             <input type="radio" name="select" class="accordion-select" />
-       <div class="accordion-title"><span>Title</span></div>
-       <div class="accordion-content">Content</div> 
-   </div> 
+        <div class="accordion-title"><span>Un centre à taille humaine</span></div>
+          <div class="accordion-content">
+            <!--Installation d'un petit carousel avec trois photos d'illustration avec la class bootstrap carousel-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="IMAGES\manoeuvre229720p.jpg" class="d-block w-100" alt="Manoeuvre sur piste">
+                </div>
+                <div class="carousel-item">
+                  <img src="IMAGES\Simulateur720p.jpg" class="d-block w-100" alt="Simulateur de conduite haut de gamme">
+                </div>
+                <div class="carousel-item">
+                  <img src="IMAGES\vuepiste720p.jpg" class="d-block w-100" alt="vue des pistes">
+                </div>
+              </div>
+            </div>
+            <H4>Dans les vieux pots que l'on forme les meilleurs routiers?</H4>
+            <p> Oui extérieurement, notre centre de formation n'arrive plus à cacher le poids des ans, cependant, vous y trouverez tout
+              le necessaire pour mener à bien votre projet ! En effet que vous veniez pour du transport ou de la logistique, vous aurez 
+              accès à une salle de cours équipée de moyens audio-visuels, un entreprot école et des outils adaptés aux dernières 
+              recommandations R400 ; coté transport, un simulateur haut de gamme vous permettra de vous familiariser aux véhicules lourds,
+              sans oublier 2 pistes PL pour vos manoeuvres.
+            </p>
+            <p>N'oublions pas une équipe de formateurs et d'outils numériques pour suivre et individualiser votre formation.</p>
+
+          </div> 
+    </div> 
    <footer><a href="https:\\www.multimodal-la-chaine.fr" target="_blank">Copyright © - Tous droits réservés 2022 </a> </footer>
     
-</body>
+  </body>
 </html>
