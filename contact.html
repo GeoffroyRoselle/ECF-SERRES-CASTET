@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Introduction responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Installation de bootstrap en local-->
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!--Feuille de style local perso-->
+        <link href="Style.css" rel="stylesheet" type="text/css" />
+        <!--Activation du fichier javacript en local-->
+        <script src="bootstrap.bundle.min.js"></script>
+        <title>Nos formations ECF</title>
+        <link rel="icon" type="image/svg" href="IMAGES\Logoecfsvg.svg"/>
+        
+    </head>
+<body>
+    <!--Reprise et adaptation de la navbar du cours-->
+    <!-- Déclaration du composant -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <!-- Titre de la page -->
+          <a class="navbar-brand" href="E:\STUDI\Projet ECF\ECF-SERRES-CASTET\ECFindex.HTML"><img id="demo" class="img-fluid" src="Logo ECF pro.png" alt="ECF-PRO Serres Castet"></a>
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarScroll" 
+          aria-controls="navbarScroll" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
+                <path d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793L7.646.146zM1 7v3h14V7H1zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2h14zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarScroll">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Elements du menu -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Les prochaines formations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nous contacter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Actualité</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Rechercher sur le site" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Recherche</button>
+            </form>
+          </div>
+        </div>
+     </nav>
+     <!--Création d'un formulaire de contact pour les personnes interessées par les formations-->
+     <div class="contact-box  ">Une Formation vous interesse?
+         <br>
+         Contactez-nous avec le formulaire ci-dessous !
+     </div>
+     <div class="contact-box">
+        <form action="" method="get" class="">
+
+            <div class="contact-wrapper">
+                <form class="form-horizontal" method="post" action="contact.php">
+                  <h1 class="section-header">Demande de contact</h1>
+          
+                  <label for="name">Nom</label>
+                  <input type="text" class="text-center" id="name" placeholder="nom" name="name" required>
+          
+                  <label for="name">Prénom</label>
+                  <input type="text" class="text-center" id="lastname" placeholder="prénom" name="lastname" required>
+          
+                  <label for="bday"> date de naissance :</label>
+                  <input type="date"class="text-center" id="bday" name="bday">
+                  
+                  <label for="email">Email</label>
+                  <input type="email"class="text-center" id="emailField" placeholder="email@mail.com" name="emailField" required>
+                  
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" class="text-center" id="phone" placeholder="0600000000" name="phone">
+          
+                  <p>Avez vous passé une visite médicale ?</p>
+                  <div>
+                   
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" >
+                <label class="btn btn-outline-success" for="success-outlined">OUI</label>
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                <label class="btn btn-outline-danger" for="danger-outlined">NON</label>
+                  </div>
+                  <label for="file">importez la visite médicale</label>
+                  <input type="file" class="form-control" id="monFichier" name="monFichier" accept="image/png, image/jpeg, .pdf,">
+                  
+          
+                  <label for="category">Vous souhaitez une information sur ?</label>
+                  <select id="category" name="category">
+                    <option value="default">Choisissez une catégorie</option>
+                    <option value="BE">Permis BE</option>
+                    <option value="C1">Permis C1</option>
+                    <option value="C">Permis C</option>
+                    <option value="D">Permis D</option>
+                    <option value="C1E">Permis C1E</option>
+                    <option value="CE">Permis CE</option>
+                    <option value="TP">Titre Professionnel</option>
+                    <option value="FCO">FCO</option>
+                    <option value="FIMO">FIMO</option>
+                    <option value="CACES">Caces</option>
+                  </select>
+                  <label for="centre">Centre de Formation</label>
+                  <select id="centre" name="centre">
+                    <option value="default">Choisissez le centre de formation</option>
+                    <option value="MER">Mérignac</option>
+                    <option value="CAR">Carbon-Blanc</option>
+                    <option value="SAN">Notre Dame de Sanilhac</option>
+                    <option value="SER">Serres-Castet</option>
+                  </select>
+                  
+                  
+                      <label for="message">Message</label>
+                  <textarea  id="message" name="message" required></textarea>
+          
+                  <button class="btn btn-success" id="submit" type="submit">Envoyer</button>
+                
+          
+                </form>
+
+      <footer><a href="https:\\www.multimodal-la-chaine.fr" target="_blank">Copyright © - Tous droits réservés 2022 </a> </footer>
+    
+</body>
+</html>
