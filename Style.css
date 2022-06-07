@@ -193,6 +193,11 @@
         font-size: 0.8rem;
         margin-top: 2rem;
       }
+      .reduc-image{
+          height: 250px;
+          width: 300px;
+
+      }
     /* Média Quéry necessaires pour l'affichage sur mobile*/
     @media  screen and (max-width : 850px) and ( orientation : portrait) 
     {
@@ -209,7 +214,7 @@
         color: #ffffff;
         width: 100%;
         height: 70px;
-        font-size: 20px;
+        font-size: 1.3rem;
 
         }
         .accordion-content 
@@ -224,7 +229,7 @@
         } 
         .table-mobile 
         {
-        font-size : 0.75rem;
+        font-size : 1.2rem;
 
         }
     }
