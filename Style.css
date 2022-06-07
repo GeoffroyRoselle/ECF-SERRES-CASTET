@@ -198,11 +198,25 @@
           width: 300px;
 
       }
+      .table-mobile 
+        {
+        font-size : 1.5rem;
+        text-align: center justify;
+        vertical-align: middle;
+
+        }
     /* Média Quéry necessaires pour l'affichage sur mobile*/
-    @media  screen and (max-width : 850px) and ( orientation : portrait) 
+    @media  screen and (max-width : 800px) and ( orientation : portrait) 
     {
         .end-date {
             display : none;
+        }
+        .table-mobile 
+        {
+        font-size : 0.75rem;
+        text-align: center justify;
+        vertical-align: middle;
+
         }
     }
     @media  screen and (max-width : 540px) and ( orientation : portrait) 
@@ -229,7 +243,9 @@
         } 
         .table-mobile 
         {
-        font-size : 1.2rem;
+        font-size : 0.75rem;
+        text-align: center justify;
+        vertical-align: middle;
 
         }
     }
