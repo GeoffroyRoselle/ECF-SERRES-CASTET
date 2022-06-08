@@ -213,6 +213,17 @@
         vertical-align: middle;
 
         }
+    /* Suite ajout de la class mav-fixed pour garder le menu fixe, ajout
+    de deux classe pour gérer la mise en page des headers de la page index
+    et formation. Elles sont reprises dans le mediaquery pour adapter la marge
+    top */
+    
+        .headform {
+           margin-top: 25vh; 
+        }
+        .headind {
+            margin-top:25vh;
+        }
     /* Média Quéry necessaires pour l'affichage sur mobile*/
     @media  screen and (max-width : 800px) and ( orientation : portrait) 
     {
@@ -256,4 +267,19 @@
         vertical-align: middle;
 
         }
-    }
+        footer {
+            margin: 1em;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: #ff454e;
+            color: #fff;
+            font-size: xx-small;
+                }  
+        .headform {
+             margin-top: 10vh; 
+                 }
+        .headind {
+            margin-top:12vh;
+                }
+            } 
