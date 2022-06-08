@@ -1,3 +1,6 @@
+.body {
+    background-color: #297aff;
+}
 /* début du menu en accordéon */
 .accordion {
     box-sizing: border-box;
@@ -111,6 +114,7 @@
     }
     /* Pied de page */
     footer {
+        margin: 1em;
         display: flex;
         justify-content: center;
         padding: 5px;
