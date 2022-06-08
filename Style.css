@@ -198,6 +198,10 @@
           width: 300px;
 
       }
+      .carimg{
+          height: 350px;
+          max-width: 400px;
+      }
       .table-mobile 
         {
         font-size : 1.5rem;
